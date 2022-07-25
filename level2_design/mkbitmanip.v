@@ -1069,7 +1069,7 @@ module mkbitmanip(CLK,
 	       field1__h2241 :
 	       IF_mav_putvalue_instr_BITS_31_TO_25_EQ_0b10010_ETC___d2259 ;
   assign IF_mav_putvalue_instr_BITS_31_TO_25_EQ_0b100_9_ETC___d2268 =
-	     (mav_putvalue_instr[31:25] == 7'b0000100 &&
+	     (mav_putvalue_instr[31:25] == 7'b0000000 &&
 	      x__h254 == 10'b1110110011) ?
 	       field1__h1126 :
 	       ((mav_putvalue_instr[31:25] == 7'b0000101 &&
@@ -4487,7 +4487,7 @@ module mkbitmanip(CLK,
 	  field1___1__h6358)
   begin
     case (mav_putvalue_instr[21:20])
-      2'b0:
+      2'b00:
 	  IF_mav_putvalue_instr_BITS_21_TO_20_66_EQ_0b0__ETC___d2277 =
 	      _0_CONCAT_0_CONCAT_0_CONCAT_0_CONCAT_0_CONCAT_0_ETC___d417;
       2'b01:
