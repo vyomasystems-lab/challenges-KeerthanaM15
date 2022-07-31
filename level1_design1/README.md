@@ -27,13 +27,20 @@ Based on the above test input and analysing the design, we see the following
 
 ``` buggy lines are found and image is inserted```
 
+https://im.ge/i/FPF026
+
+
 For the Multiplexer design, the select line 5'b01100 is not given in the design code.
 
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
 
-![](https://i.imgur.com/5XbL1ZH.png)
 
 The updated design is checked in as mux.v
 
-```updated design image is included```
+https://im.ge/i/FPF6c8
+
+following output is found
+
+SEL=00012 INPUT=00000 model=00000 DUT=00000
+     2.00ns INFO     test_mux passed
