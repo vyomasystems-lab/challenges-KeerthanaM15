@@ -1,6 +1,6 @@
 # Multiplexer Design Verification
 
-The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test (adder module here) which takes in 32 2-bit inputs inp0 to inp31, 5 - bit selection lines sel and gives 2-bit output out
+The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test which takes in 32 2-bit inputs inp0 to inp31, 5 - bit selection lines sel and gives 2-bit output out
 
 The values are assigned to the input port using 
 ```
