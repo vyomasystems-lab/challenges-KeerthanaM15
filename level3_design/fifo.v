@@ -1,4 +1,4 @@
-module FIFO(wr_clk,rd_clk,reset,data_i,data_o,fifo_full,fifo_empty,wr_en,rd_en);
+module fifo(wr_clk,rd_clk,reset,data_i,data_o,fifo_full,fifo_empty,wr_en,rd_en);
   parameter fifo_depth=8;
   output reg [fifo_depth-1:0]data_o;
   output reg fifo_full,fifo_empty;

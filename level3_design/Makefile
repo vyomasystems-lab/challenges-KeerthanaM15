@@ -6,7 +6,7 @@ PWD=$(shell pwd)
 
 VERILOG_SOURCES = $(PWD)/               # provide your design path
 
-TOPLEVEL :=  FIFO         # design file
+TOPLEVEL :=  fifo         # design file
 MODULE   :=  fifo_test    # test file
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
