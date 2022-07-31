@@ -19,11 +19,12 @@ async def test_seq_bug1(dut):
 
     # reset
     dut.reset.value = 1
-    await FallingEdge(dut.clk)  
+    await FallingEdge(dut.wr_clk)  
     dut.reset.value = 0
-    await FallingEdge(dut.clk)
-
-    dut.inp_bit.value=1
+    await FallingEdge(dut.wr_clk)
+    dut.reset.wr_en=1
+    await FallingEdge(dut.wr_clk)
+    dut.data_i.value=11
     await FallingEdge(dut.clk)
     dut._log.info(f'input={int(dut.inp_bit.value):05} output={int(dut.seq_seen.value):05}')
 
