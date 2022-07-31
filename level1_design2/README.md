@@ -1,6 +1,6 @@
 # Pattern_detector Design Verification
 
-The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test (adder module here) which takes in one bit input inp_bit, and clock, reset and one bit output seq_seen
+The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test which takes in one bit input inp_bit, and clock, reset and one bit output seq_seen
 
 The values are assigned to the input port using 
 ```
